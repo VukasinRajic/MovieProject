@@ -14,8 +14,6 @@ let whatAcc = localStorage.getItem("acc");
 let movieAccBookmark = `bookmarksMovie${whatAcc}`;
 let tvAccBookmark = `bookmarksTV${whatAcc}`;
 
-console.log("goran");
-
 if (storedData.otherValue) {
   getTVData(TV_DATA_FROM_ID);
   let tvAccBookmarked = JSON.parse(localStorage.getItem(`${tvAccBookmark}`));
